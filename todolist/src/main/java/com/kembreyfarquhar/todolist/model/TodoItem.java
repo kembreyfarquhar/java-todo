@@ -1,6 +1,8 @@
 package com.kembreyfarquhar.todolist.model;
 
 
+import com.sun.istack.NotNull;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -9,6 +11,7 @@ import javax.persistence.Id;
 public class TodoItem {
 
     private Long id;
+    @NotNull
     private String title;
     private boolean complete;
 
